@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | VoidTheorem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any questions or collaborations!</p>
+
+    <form id="contact-form" class="contact-form" onsubmit="return showSuccessMessage()">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit" class="button1">Send Message</button>
+    </form>
+
+    <!-- Μήνυμα επιτυχίας -->
+    <div id="success-message" class="success-message" style="display:none;">
+      Your message has been sent successfully!
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
